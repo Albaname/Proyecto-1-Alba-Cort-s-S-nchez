@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200%;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url(https://i.pinimg.com/736x/81/30/64/813064230312174bf6e4f13ef6dba1ce.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  padding: 80px 0;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(2, 13, 22);
+  font-weight: 600;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: rgb(2, 0, 0);
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  display: flex;
+}
+
+.header-txt {
+  flex-basis: 50%;
+}
+
+.header-txt h1 {
+  font-size: 60px;
+  color: rgb(0, 6, 11);
+  line-height: 1.3;
+  margin-bottom: 25px;
+}
+
+.header-txt span {
+  color: rgb(7, 0, 0);
+}
+
+.header txt p {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 45px;
+}
+
+.butons {
+  display: flex;
+}
+
+.bnt-1,
+.bnt-2,
+bnt-3 {
+  display: inline-block;
+  padding: 11px 35px;
+  border: 2px solid red;
+  border-radius: 25px;
+  margin-right: 25px;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+
+.bnt-1:hover {
+  background-color: red;
+}
+
+.popular {
+  padding: 100px 0;
+  text-align: center;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin-bottom: 45px;
+}
+
+.popular-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-content img {
+  width: 150px;
+}
+
+.product-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.product-1 {
+  background-color: rgb(247, 247, 247);
+}
+
+.product-txt {
+  padding: 50px 30px;
+}
+
+h3 {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price p {
+  font-size: 17px;
+  color: red;
+}
+
+.bnt-2 {
+  padding: 5px 25px;
+  background-color: red;
+  margin-right: 0;
+}
+
+.contact {
+  padding: 150px 100px;
+}
+
+.contact-content {
+  background-color: rgb(7, 128, 155);
+  text-align: center;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input {
+  padding: 18px 25px;
+  background-color: rgb(255, 255, 255);
+  border: 0;
+  border-radius: 25px;
+  outline: none;
+  margin-right: 10px;
+  color: rgb(0, 3, 6);
+  font-size: 17px;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 17px;
+}
+
+.bnt-3 {
+  background-color: rgb(251, 251, 251);
+  cursor: pointer;
+  margin-right: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.link ul {
+  display: flex;
+}
+
+.link ul li > a {
+  font-size: 17px;
+  color: rgb(184, 3, 3);
+  margin-right: 20px;
+}
+
+.link ul li > a:hover {
+  color: rgb(3, 106, 184);
+}
+
+@media (max-width: 991px) {
+  .menu {
+    padding: 20px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    display: none;
+  }
+
+  .menu .navbar ul li a:hover {
+    color: black;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+
+  .header {
+    min-height: 0vh;
+    padding: 80px 30px 50px 30px;
+  }
+
+  .header-txt {
+    text-align: 50px;
+    flex-basis: 100%;
+  }
+
+  .header-txt h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+
+  .butons {
+    justify-content: center;
+  }
+
+  .bnt-1:last-of-type {
+    margin-right: 0;
+  }
+
+  .popular {
+    display: none;
+  }
+
+  .product {
+    padding: 30px;
+  }
+
+  .product-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .product-1 img {
+    width: 100%;
+  }
+
+  .contact {
+    padding: 30px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input {
+    margin: 0 0 20px 0;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .link ul {
+    margin-top: 20px;
+  }
+}
